@@ -2,8 +2,7 @@ FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update \
-    && apt-get -y install \
+RUN apt-get update && apt-get -y install \
 	dnsmasq \
 	hostapd \
 	ifupdown \

@@ -3,7 +3,7 @@
 sysctl -w net.ipv4.ip_forward=1
 rfkill block wifi
 rfkill unblock wifi
-ifup wlan0
+ifup wlp2s0
 iptables-restore < /etc/iptables.ipv4.nat
 /opt/replace_wifi_pw.sh
 /etc/init.d/dnsmasq start

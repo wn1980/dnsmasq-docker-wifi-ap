@@ -2,10 +2,10 @@
 # Include files from /etc/network/interfaces.d:
 source-directory /etc/network/interfaces.d
 
-auto lo wlan0
+auto lo wlp2s0
 iface lo inet loopback
 
-iface wlan0 inet static
+iface wlp2s0 inet static
   address 192.168.42.1
   netmask 255.255.255.0
   up iptables-restore < /etc/iptables.ipv4.nat
